@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator</title>
+    <style>
+    #Display
+    {
+        border-radius: 5px;
+        height: 55px;
+        width: 87%;
+        margin: 15px;
+        font-size: 25px;
+        color: blue;
+        background-color: rgb(243, 243, 239);
+    }
+    .Button
+    {
+       margin: 9px; 
+       height: 55px;
+       width: 55px;
+       font-size: 30px;
+    }
+    #Button-Container
+    {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #Full
+    {
+        border: 3px solid rgb(204,197,197);
+        height: 560px;
+        width:255px;
+        margin:3.5% auto;
+        border-radius: 5px;
+    }
+    .A
+    {
+        color: rgb(5, 251, 120);
+    }
+    #B
+    {
+        border: 1px solid green;
+        height:710px;
+      
+    }
+    </style>
+</head>
+<body>
+    <div id="B">
+    <div id="Full">
+    <input type="text" id="Display" readonly>
+    <div id="Button-Container">
+
+        <button class="Button"
+        onclick="total='';
+        document.querySelector('#Display').value=total;">C</button>
+
+        <button class="Button"
+        onclick="total=total +'1';
+        document.querySelector('#Display').value=total;">1</button>
+
+        <button class="Button"
+        onclick="total=total +'2';
+        document.querySelector('#Display').value=total;">2</button>
+
+        <button class="Button"
+        onclick="total=total +'+';
+        document.querySelector('#Display').value=total;">+</button>
+
+        <button class="Button"
+        onclick="total=total +'3';
+        document.querySelector('#Display').value=total;">3</button>
+
+        <button class="Button"
+        onclick="total=total +'4';
+        document.querySelector('#Display').value=total;">4</button>
+
+        <button class="Button"
+        onclick="total=total +'-';
+        document.querySelector('#Display').value=total; ">-</button>
+
+        <button class="Button"
+        onclick="total=total +'5';
+        document.querySelector('#Display').value=total;">5</button>
+
+        <button class="Button"
+        onclick="total=total +'6';
+        document.querySelector('#Display').value=total;">6</button>
+
+        <button class="Button"
+        onclick="total=total +'/';
+        document.querySelector('#Display').value=total;">/</button>
+
+        <button class="Button"
+        onclick="total=total +'7';
+        document.querySelector('#Display').value=total;">7</button>
+
+        <button class="Button"
+        onclick="total=total +'8';
+        document.querySelector('#Display').value=total;">8</button>
+        <button class="Button"
+        onclick="total=total +'*';
+        document.querySelector('#Display').value=total;">x</button>
+
+        <button class="Button"
+        onclick="total=total +'9';
+        document.querySelector('#Display').value=total;">9</button>
+
+        <button class="Button"
+        onclick="total=total +'0';
+        document.querySelector('#Display').value=total;">0</button>
+
+        <button class="Button"
+        onclick="total=total +'.';
+        document.querySelector('#Display').value=total;">.</button>
+
+        <button class="Button"
+        onclick="let result=eval(total);
+        total=result;
+        document.querySelector('#Display').value=total;">=</button>
+
+        <span class="A">Made By @ Nikhil Kumar Singh</span>
+
+    </div>
+    
+</div>
+</div>
+ <script>
+    let total='';
+    document.querySelector('#Display').value=total;
+ </script>   
+</body>
+</html>
